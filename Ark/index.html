@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色战斗小游戏（角色由前端定义）</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="char-enemy-list">角色与敌人列表</button>
+      <button class="tab-btn" data-tab="battle">战斗模块</button>
+    </div>
+
+    <div id="char-enemy-list" class="tab-content active">
+      <h2>角色列表</h2>
+      <div class="character-list"></div>
+
+      <h2>敌人列表</h2>
+      <div class="enemy-list"></div>
+    </div>
+
+    <div id="battle" class="tab-content">
+      <div class="battle-module">
+        <h2>战斗模块</h2>
+        <button id="startBattle">开始战斗（随机选角和敌人）</button>
+
+        <div class="battle-characters" id="battleCharacters"></div>
+        <div class="battle-controls">
+          <button id="chooseChar1">选择角色1</button>
+          <button id="chooseChar2">选择角色2</button>
+          <button id="attack">攻击</button>
+          <button id="skill1">技能1：提升攻击力</button>
+          <button id="skill2">技能2：提升防御力</button>
+          <button id="skill3">技能3：降低敌人攻击力</button>
+        </div>
+        <div id="battleLog"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script_battle.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色战斗小游戏（角色由前端定义）</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="char-enemy-list">角色与敌人列表</button>
+      <button class="tab-btn" data-tab="battle">战斗模块</button>
+    </div>
+
+    <div id="char-enemy-list" class="tab-content active">
+      <h2>角色列表</h2>
+      <div class="character-list"></div>
+
+      <h2>敌人列表</h2>
+      <div class="enemy-list"></div>
+    </div>
+
+    <div id="battle" class="tab-content">
+      <div class="battle-module">
+        <h2>战斗模块</h2>
+        <button id="startBattle">开始战斗（随机选角和敌人）</button>
+
+        <div class="battle-characters" id="battleCharacters"></div>
+        <div class="battle-controls">
+          <button id="chooseChar1">选择角色1</button>
+          <button id="chooseChar2">选择角色2</button>
+          <button id="attack">攻击</button>
+          <button id="skill1">技能1：提升攻击力</button>
+          <button id="skill2">技能2：提升防御力</button>
+          <button id="skill3">技能3：降低敌人攻击力</button>
+        </div>
+        <div id="battleLog"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script_battle.js"></script>
+</body>
+</html>
